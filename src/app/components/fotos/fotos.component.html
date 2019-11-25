@@ -1,0 +1,8 @@
+<div class="card-columns" *ngIf="items">
+
+    <div class="card" *ngFor="let item of items | async">
+        <img [src]="item.url" class="card-img-top">
+
+    </div>
+
+</div>
